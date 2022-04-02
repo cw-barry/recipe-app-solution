@@ -18,7 +18,11 @@ const Navbar = () => {
       <Menu isOpen={isOpen}>
         <MenuLink to="/about">About</MenuLink>
         <MenuLink
-          to={{ pathname: 'https://github.com/orgs/clarusway/dashboard' }}
+          onClick={() =>
+            (window.location.href =
+              'https://github.com/orgs/clarusway/dashboard')
+          }
+          to=""
         >
           Github
         </MenuLink>
